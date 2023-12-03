@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Email</title>
+</head>
+<body>
+    <button id="sendEmailButton" style="background-color: rgb(224, 150, 150); border-radius: 40px; padding: 20px;">Send Email</button>
+    <div id="notification"></div>
+    
+    <script src="email.js"></script>
+    <script>
+        document.getElementById('sendEmailButton').addEventListener('click', () => {
+            sendEmail();
+        });
+
+        function sendEmail() {
+             
+            document.getElementById('notification').innerText = 'Email sent successfully!';
+
+        }
+    </script>
+</body>
+</html>
